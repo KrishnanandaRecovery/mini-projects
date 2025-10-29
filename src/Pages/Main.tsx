@@ -2,6 +2,7 @@ import { Link, Route, Routes } from "react-router-dom";
 import HeartTrails from "../Projects/HeartTrails/HeartTrails";
 import Home from "./Home";
 import NotFound from "./NotFound";
+import TextEffect from "../Projects/TextEffect/TextEffect";
 
 function Main() {
     return <div className="flex">
@@ -17,6 +18,7 @@ function Main() {
         <Routes>
           <Route index element={<Home />} />
           <Route path='/heart-trails' element={<HeartTrails />} />
+          <Route path='/text-effect' element={<TextEffect />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
