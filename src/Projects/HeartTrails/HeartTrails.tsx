@@ -3,9 +3,9 @@ import './style.css';
 
 function HeartTrails() {
     useEffect(() => {
-        const layoutEl = document.querySelector('.layout');
+        const layoutEl = document.querySelector('.heart-trail-layout');
 
-        addEventListener('mousemove', (e) => {
+        const trailHearts = (e: MouseEvent) => {
             const posX = e.offsetX;
             const posY = e.offsetY;
             const size = Math.random() * 100;
@@ -18,14 +18,15 @@ function HeartTrails() {
             layoutEl?.append(spanEl);
 
             setTimeout(() => spanEl.remove(), 300)
-        });
+        }
+        addEventListener('mousemove', trailHearts);
 
         return () => {
-            removeEventListener('mousemove', () => {})
+            removeEventListener('mousemove', trailHearts)
         }
     }, []);
 
-    return <div className="layout bg-black h-screen">
+    return <div className="heart-trail-layout bg-black h-screen">
     </div>
 }
 

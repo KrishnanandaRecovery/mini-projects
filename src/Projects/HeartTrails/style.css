@@ -1,9 +1,9 @@
-.layout {
+.heart-trail-layout {
     overflow: hidden;
     position: relative;
 }
 
-span {
+.heart-trail-layout span {
     background-image: url('https://cdn4.iconfinder.com/data/icons/set-1/32/__1-512.png');
     background-size: cover;
     position: absolute;

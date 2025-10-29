@@ -1,0 +1,1 @@
+export const roles = ['Krishnananda', 'Front End Developer', 'Designer', 'Traveller', 'Engineer'];

@@ -9,8 +9,11 @@ function Main() {
       <div className="p-2 w-50 h-screen bg-amber-100">
         <h3 className="text-2xl">Projects</h3>
         <ul>
-            <li className="p-2 bg-amber-400 rounded text-amber-900">
-              <Link to='/heart-trails'>Heart Trails</Link>
+            <li className="p-2 bg-amber-400 rounded text-amber-900 mb-2">
+              <Link to='/heart-trails' >Heart Trails</Link>
+            </li>
+            <li className="p-2 bg-amber-400 rounded text-amber-900 mb-2">
+              <Link to='/text-effect' >Text Effect</Link>
             </li>
         </ul>
       </div>
